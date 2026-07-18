@@ -1,4 +1,29 @@
-venv/
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform variables
+*.auto.tfvars
+
+# Ignore local override files
+terraform.rc
+terraform.rc.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+
+# Python
 __pycache__/
 *.pyc
-.env
+.venv/
+venv/
