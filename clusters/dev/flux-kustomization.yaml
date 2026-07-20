@@ -7,11 +7,15 @@ metadata:
 
 spec:
   interval: 1m
+
   path: ./clusters/dev
+
   prune: true
+
+  wait: true
+
+  timeout: 5m
 
   sourceRef:
     kind: GitRepository
     name: github-actions-eks
-
-  wait: true
