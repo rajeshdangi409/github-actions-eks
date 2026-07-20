@@ -10,9 +10,9 @@ spec:
     name: github-actions-eks
 
   filterTags:
-    pattern: '^(\d{8}-\d{6})-[a-f0-9]{7}$'
-    extract: '$1'
+    pattern: '^(\d{8})-(\d{6})-[a-f0-9]{7}$'
+    extract: '$1$2'
 
   policy:
     numerical:
-      order: asc
+      order: desc
