@@ -1,0 +1,33 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageUpdateAutomation
+
+metadata:
+  name: github-actions-eks
+  namespace: flux-system
+
+spec:
+  interval: 1m
+
+  sourceRef:
+    kind: GitRepository
+    name: github-actions-eks
+
+  git:
+    checkout:
+      ref:
+        branch: main
+
+    commit:
+      author:
+        name: Flux Bot
+        email: flux@example.com
+
+      messageTemplate: |
+        chore: update image tag
+
+    push:
+      branch: main
+
+  update:
+    path: ./
+    strategy: Setters

@@ -1,0 +1,10 @@
+apiVersion: image.toolkit.fluxcd.io/v1
+kind: ImageRepository
+
+metadata:
+  name: github-actions-eks
+  namespace: flux-system
+
+spec:
+  image: rajeshdangi/github-actions-eks
+  interval: 1m

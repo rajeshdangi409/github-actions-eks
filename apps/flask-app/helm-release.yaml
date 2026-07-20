@@ -32,4 +32,6 @@ spec:
 
     image:
       repository: rajeshdangi/github-actions-eks
-      tag: latest
+
+      # {"$imagepolicy": "flux-system:github-actions-eks:tag"}
+      tag: "20260101-000000-0000000"
