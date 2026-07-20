@@ -1,0 +1,12 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+
+metadata:
+  name: github-actions-eks
+  namespace: flux-system
+
+spec:
+  interval: 1m
+  url: https://github.com/rajeshdangi409/github-actions-eks
+  ref:
+    branch: main

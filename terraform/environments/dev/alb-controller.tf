@@ -22,25 +22,25 @@ resource "helm_release" "aws_load_balancer_controller" {
   ]
 
   set = [
-  {
-    name  = "clusterName"
-    value = module.eks.cluster_name
-  },
-  {
-    name  = "serviceAccount.create"
-    value = "false"
-  },
-  {
-    name  = "serviceAccount.name"
-    value = "aws-load-balancer-controller"
-  },
-  {
-    name  = "region"
-    value = var.aws_region
-  },
-  {
-    name  = "vpcId"
-    value = module.vpc.vpc_id
-  }
-]
+    {
+      name  = "clusterName"
+      value = module.eks.cluster_name
+    },
+    {
+      name  = "serviceAccount.create"
+      value = "false"
+    },
+    {
+      name  = "serviceAccount.name"
+      value = "aws-load-balancer-controller"
+    },
+    {
+      name  = "region"
+      value = var.aws_region
+    },
+    {
+      name  = "vpcId"
+      value = module.vpc.vpc_id
+    }
+  ]
 }
