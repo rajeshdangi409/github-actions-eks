@@ -30,8 +30,6 @@ spec:
   values:
     replicaCount: 2
 
-    image:
-      repository: rajeshdangi/github-actions-eks
-
-      # {"$imagepolicy": "flux-system:github-actions-eks:tag"}
-      tag: "20260101-000000-0000000"
+  image:
+    repository: rajeshdangi/github-actions-eks
+    tag: 20260101-000000-0000000 # {"$imagepolicy": "flux-system:github-actions-eks:tag"}
