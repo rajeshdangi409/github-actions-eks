@@ -8,5 +8,9 @@ metadata:
 spec:
   interval: 1m
   url: https://github.com/rajeshdangi409/github-actions-eks
+
+  secretRef:
+    name: github-auth
+
   ref:
     branch: main
