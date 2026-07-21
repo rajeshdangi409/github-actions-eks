@@ -4,7 +4,7 @@ image:
   repository: rajeshdangi/github-actions-eks
 
   # {"$imagepolicy": "flux-system:github-actions-eks:tag"}
-  tag: latest
+  tag: "20260720-112054-3a355e6"
 
   pullPolicy: Always
 
