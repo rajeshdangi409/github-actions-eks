@@ -19,8 +19,3 @@ spec:
   upgrade:
     remediation:
       retries: 3
-  values:
-    replicaCount: 2
-  image:
-    repository: rajeshdangi/github-actions-eks
-    tag: 20260720-112054-3a355e6 # {"$imagepolicy": "flux-system:github-actions-eks:tag"}

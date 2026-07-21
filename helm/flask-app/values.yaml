@@ -2,7 +2,10 @@ replicaCount: 2
 
 image:
   repository: rajeshdangi/github-actions-eks
+
+  # {"$imagepolicy": "flux-system:github-actions-eks:tag"}
   tag: latest
+
   pullPolicy: Always
 
 service:
