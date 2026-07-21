@@ -3,8 +3,7 @@ replicaCount: 2
 image:
   repository: rajeshdangi/github-actions-eks
 
-  # {"$imagepolicy": "flux-system:github-actions-eks:tag"}
-  tag: "20260720-112054-3a355e6"
+  tag: "20260720-112054-3a355e6" # {"$imagepolicy": "flux-system:github-actions-eks:tag"}
 
   pullPolicy: Always
 
