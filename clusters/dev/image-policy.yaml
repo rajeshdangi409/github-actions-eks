@@ -15,4 +15,4 @@ spec:
 
   policy:
     numerical:
-      order: desc
+      order: asc
