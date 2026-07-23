@@ -4,6 +4,13 @@ app = Flask(__name__)
 
 APP_VERSION = "v7"
 
+FONTS_URL = (
+    "https://fonts.googleapis.com/css2?"
+    "family=Space+Grotesk:wght@400;500;600;700"
+    "&family=JetBrains+Mono:wght@400;500;600"
+    "&display=swap"
+)
+
 PAGE = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +19,7 @@ PAGE = f"""<!DOCTYPE html>
 <title>flask-app · GitOps on EKS</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="{FONTS_URL}" rel="stylesheet">
 <style>
   :root {{
     --bg: #0F141B;
@@ -256,7 +263,10 @@ PAGE = f"""<!DOCTYPE html>
     </div>
 
     <h1>Hello from GitOps</h1>
-    <p class="lede">Every push to main rebuilds, retags, and redeploys this service on its own. No manual kubectl apply.</p>
+    <p class="lede">
+      Every push to main rebuilds, retags, and redeploys this service
+      on its own. No manual kubectl apply.
+    </p>
 
     <div class="status-row">
       <span class="pill"><span class="dot"></span>live</span>
