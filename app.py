@@ -2,7 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-APP_VERSION = "v7"
+APP_VERSION = "v8"
 
 FONTS_URL = (
     "https://fonts.googleapis.com/css2?"
