@@ -1,7 +1,7 @@
 replicaCount: 2
 image:
   repository: rajeshdangi/github-actions-eks
-  tag: "20260723-055243-6057a67" # {"$imagepolicy": "flux-system:github-actions-eks:tag"}
+  tag: "20260723-055343-0a9cce9" # {"$imagepolicy": "flux-system:github-actions-eks:tag"}
   pullPolicy: Always
 service:
   type: ClusterIP
